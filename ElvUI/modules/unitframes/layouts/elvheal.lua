@@ -307,7 +307,7 @@ local function Shared(self, unit)
 			experience:SetFrameLevel(health:GetFrameLevel() - 1)
 			experience:SetParent(LocationBar)
 			--experience:SetAlpha(.25)
-			CombatFX2(experience)
+			CombatFX(experience)
 
 			--experience:HookScript("OnEnter", function(self) self:SetAlpha(1) end)
 			--experience:HookScript("OnLeave", function(self) self:SetAlpha(0) end)

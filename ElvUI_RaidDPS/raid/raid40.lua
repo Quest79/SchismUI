@@ -45,6 +45,21 @@ local function Shared(self, unit)
 	power:SetFrameLevel(self.Health:GetFrameLevel() + 2)
 	power.backdrop:CreateShadow("Quest")
 	power.colorClass = true
+	
+	local connector = CreateFrame("Frame", nil, power)
+	connector:SetTemplate("NoBorder", false)
+	connector:SetFrameStrata(power:GetFrameStrata())
+	connector:SetFrameLevel(power:GetFrameLevel() + 2)
+	connector:Point("CENTER", power, "BOTTOMLEFT", -BORDER, -1)
+	connector:Width(1)
+	connector:Height(1)
+	local connector = CreateFrame("Frame", nil, power)
+	connector:SetTemplate("NoBorder", false)
+	connector:SetFrameStrata(power:GetFrameStrata())
+	connector:SetFrameLevel(power:GetFrameLevel() + 2)
+	connector:Point("CENTER", power, "BOTTOMRIGHT", BORDER, -1)
+	connector:Width(1)
+	connector:Height(1)
 
 	self.Power = power
 --]]	

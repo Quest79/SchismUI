@@ -12,6 +12,7 @@ C["media"] = {
 	
 	-- textures
 	["normTex"] = [[Interface\AddOns\ElvUI\media\textures\normTex]], -- texture used for Elvui healthbar/powerbar/etc
+	["normTex2"] = [[Interface\AddOns\ElvUI\media\textures\normTex2]], -- texture used for Elvui healthbar/powerbar/etc
 	["altTex"] = [[Interface\AddOns\ElvUI\media\textures\altTex]], -- texture used for Elvui healthbar/powerbar/etc
 	["glowTex"] = [[Interface\AddOns\ElvUI\media\textures\glowTex]], -- the glow text around some frame.
 	["blank"] = [[Interface\BUTTONS\WHITE8X8]], -- the main texture for all borders/panels
@@ -265,4 +266,4 @@ C["others"] = {
 	["showthreat"] = true,                 -- enable the threat bar anchored to info right panel.	
 }
 
-C["media"].normTex2 = C["media"].normTex
+--C["media"].normTex2 = C["media"].normTex
